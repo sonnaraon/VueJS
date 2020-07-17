@@ -21,8 +21,18 @@ function fetchAskList(){
     return axios.get(`${config.baseUrl}ask/1.json`);
 }
 
+function fetchUserInfo(name){
+    return axios.get(`${config.baseUrl}user/${name}.json`);
+}
+
+function fetchItemList(id){
+    return axios.get(`${config.baseUrl}item/${id}.json`);
+}
+
 export {
     fetchNewsList,
     fetchJobsList,
-    fetchAskList
+    fetchAskList,
+    fetchItemList,
+    fetchUserInfo
 }
