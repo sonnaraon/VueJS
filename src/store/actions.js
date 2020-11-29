@@ -3,7 +3,10 @@ import {
     fetchJobsList,
     fetchAskList,
     fetchUserInfo,
-    fetchItemList }
+    fetchItemList,
+    searchCodeDelivery,
+    searchProductDelivery,
+ }
 from '../api/index.js';
 
 export default {
@@ -54,6 +57,26 @@ export default {
             .then(({ data }) => {
                 console.log(data);
                 commit('SET_ITEM', data);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    },
+    FETCH_DEL({ commit }){
+        searchCodeDelivery()
+            .then(({ data }) => {
+                console.log(data);
+                commit('SET_DEL', data);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    },
+    SEARCH_DEL({ commit }, track_id){
+        searchProductDelivery(track_id)
+            .then(({ data }) => {
+                console.log(data);
+                commit('SET_PRO', data);
             })
             .catch(error => {
                 console.log(error);

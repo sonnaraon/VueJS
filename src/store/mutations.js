@@ -13,5 +13,11 @@ export default {
     },
     SET_ITEM(state, items){
         state.items = items;
-    }
+    },
+    SET_DEL(state, delivery){
+        state.delivery = delivery;
+    },
+    SET_PRO(state, product){
+        state.product = product;
+    },
 }

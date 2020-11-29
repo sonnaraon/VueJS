@@ -3,6 +3,8 @@
         <router-link to="/news">News</router-link> |
         <router-link to="/ask">Ask</router-link> |
         <router-link to="/jobs">Jobs</router-link> |
+        <router-link to="/delivery">Delivery</router-link> | 
+        <router-link to="/product">Search Product</router-link>
     </div>
 </template>
 

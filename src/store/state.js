@@ -3,5 +3,7 @@ export default {
     jobs: [],
     ask: [],
     items: [],
-    user: {}
+    user: {},
+    delivery: [],
+    product: [],
 }
